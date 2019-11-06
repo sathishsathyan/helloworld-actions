@@ -17,3 +17,5 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Run the package
       run : java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App 
+    - name: Publish the package
+      run : mvn deploy -Dregistry=https://maven.pkg.github.com/sathishsathyan -Dtoken=GH_TOKEN

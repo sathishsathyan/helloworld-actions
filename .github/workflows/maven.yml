@@ -16,6 +16,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run the package
-      run : java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App 
+      run : java -cp target/my-app-1.0.0.jar com.mycompany.app.App 
     - name: Publish the package
       run : mvn deploy -Dregistry=https://maven.pkg.github.com/sathishsathyan -Dtoken=c88db9269cb07aa0a8a00f6fe3176d28c1ca058d
